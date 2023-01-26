@@ -15,13 +15,14 @@ section {
 }
 
 .right-content {
-    flex: 70px;
-    margin-left: 50%;
+    flex: 100px;
+    margin: auto;
 }
 
 .container-skill {
     display: flex;
     margin-top: 25px;
+    margin-right: auto;
 }
 
 .container-sosmed{
@@ -30,5 +31,5 @@ section {
 
 .container-sosmed i {
     font-size: 30px;
-    margin-right: ;
+    margin-right: 20px;
 }
