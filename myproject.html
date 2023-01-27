@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="navbarstyle.css" />
+    <link rel="stylesheet" href="myproject.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <div class="container">
+       
+    
+    <nav>
+        <div class="left-side">
+            <img src="image/kodok.jpg" id="image" style="width: 50px;" />
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">My Project</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="contactmee.html">Contact Me</a>
+        </div>
+
+    </nav>
+
+       <!-- Form -->
+        <div class="blog">
+          <div class="blog-form">
+            <div class="form-container">
+              <form onsubmit="getData(event)">
+               <h1>ADD MY PROJECT</h1>
+              <div>
+                <label for="input-blog-title">Title</label>
+                <input id="input-blog-title" />
+              </div>
+              <div>
+                <label for="input-blog-title">Start Date</label>
+                <input id="input-blog-title" />
+              </div>
+              <div>
+                <label for="input-blog-title">End Date</label>
+                <input id="input-blog-title" />
+              </div>
+              <div>
+                <label for="input-blog-content">Content</label>
+                <textarea id="input-blog-content"></textarea>
+              </div>
+             
+              
+              <div>
+                <label>Send Image</label>
+                <div class="input-blog-image-group">
+                  <label for="input-blog-image">
+                    <p>Attach File</p>
+                    <img src="image/kodok.jpg" alt="file" style="width: 30px;" />
+                  </label>
+                  <input type="file" id="input-blog-image" hidden />
+                </div>
+              </div>
+              <div class="button-group">
+                <button>Posting</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      <!--Last From-->
+
+       <article>
+           <div class="konten">
+            <a href="blogkodok.html"><img src="image/kodok.jpg" style="width: 165px;" ></a>
+            <div class="judul">
+                <a href="blogkodok.html">Kodok Zuuma</a>
+            </div>
+           <p>Kodok zuuma adalah binatang amfibi pemakan serangga yang hidup di air tawar atau di daratan</p>
+           </div>
+           <div class="konten">
+            <a href="blogmysql.html"><img src="image/images.png" style="width: 165px;"></a>
+            <div class="judul">
+                <a href="blogmysql.html">MySql</a>
+            </div>
+        
+           <p>Diketahui cikal bakal kulkas ditemukan oleh fisikawan Persia yang melakukan serangkaian percobaan pada abad ke-11.</p>
+           </div>
+           <div class="konten">
+            <a href="blogjavascript.html"><img src="image/kkk.jpg" style="width: 165px;"></a>
+            <div class="judul">
+                <a href="blogjavascript.html">Java Script</a>
+            </div>
+           <p>Kukang memanjat dan bergerak di antara ranting dan cabang pohon dengan perlahan-lahan </p>
+           </div>
+           <div class="konten">
+            <a href="blogphp.html"><img src="image/mike.jpg" style="width: 165px;"></a>
+            <div class="judul">
+                <a href="blogphp.html">PHP</a>
+            </div>
+           <p>Ikan Moorish Idol adalah salah satu ikan yang cukup populer di kalangan ara hobiis ikan hias karena bentuknya yang unik dan pola warnanya yang menarik.</p>
+           </div>
+      </article>
+  
+       <footer>
+        Copyright 2023 Dengan Saya Sendiri
+       </footer>
+    </div>
+    <script src="js/blog.js"></script>
+</body>
+</html>

@@ -20,7 +20,7 @@ let description = document.getElementById('decription').value
 
   const defaultemail = "alwirazaq022@gmail.com"
 
-  let mailTo = mailidocument.createElement('a')
+  let mailTo = document.createElement('a')
   mailTo.href = `mailto:${defaultEmail}?subject=${subject}&body=halo nama saya
   ${name}, saya ingin ${description} tolong hubungi saya ${phone}`
   mailTo.cllik()

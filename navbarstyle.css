@@ -1,13 +1,12 @@
 * {
     margin: 0;
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
+    font-family: poppins;
 }
 
 nav {
     display: flex;
     background-color: darkcyan;
-    height: 7vh;
+    height: 9vh;
 }
 
 nav div {
@@ -17,41 +16,42 @@ nav div {
 }
 
 nav div.left-side{
-    flex-wrap: wrap;
-   padding-left: 90px;
+    padding-left: 100px;
 }
 
 nav div.right-side{
-     display: flex;
-     justify-content: flex-end;
-     padding-right: 90px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
-    margin-left: 40px;
 }
 
 nav ul li {
-    display: inline;
-    margin-left: 40px;
+    display: flex;
+    margin-left: 50px;
 }
 
 nav ul li a {
     text-decoration: none;
+    color: black;
+    font-size: 18px;
 }
 
 nav ul li a.active {
     color: orange;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: bolder;
 }
 
 nav .right-side a {
     font-size: 15px;
-    padding: 8px 20px;
+    padding: 5px 20px;
     background-color: orange;
-    border-radius: 10px;
-    color: wheat;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
