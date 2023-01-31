@@ -9,7 +9,7 @@ body{
 .container{
     width: 65%;
     height: auto;
-    background: white;
+    background: rgb(34, 145, 34);
     margin:auto;
     margin-top: 20px;
     padding-bottom: 15px;
@@ -19,163 +19,253 @@ body{
     padding: 30px 0 30px 10px;
 }
 
-.blog-form {
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .blog-form .form-container {
-    width: 500px;
-  }
-  
-  .blog-form .form-container h1 {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .blog-form form label {
-    font-size: 20px;
-    font-weight: 400;
-  }
-  
-  .blog-form form input,
-  textarea,
-  select {
-    width: 100%;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    background: #f4f3f3;
-    border: 1px solid #c4c4c4;
-    border-radius: 8px;
-  }
-  
-  .blog-form form textarea {
-    height: 200px;
-  }
-  
-  .blog-form form .input-blog-image-group {
-    width: 100%;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    background: #f4f3f3;
-    border: 1px solid #c4c4c4;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  .blog-form form .input-blog-image-group label p {
-    font-size: 15px;
-  }
-  
-  .blog-form form .input-blog-image-group label {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .blog-form form .button-group {
-    text-align: right;
-  }
-  
-  .blog-form form button {
-    margin-top: 50px;
-    padding: 8px 20px;
-    font-size: 17px;
-    background: #03e935;
-    border-radius: 8px;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .blog hr {
-    border: 1px solid #dbdbdb;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-article {
-    width: 98.8%;
-    height: auto;
-    border-radius: 3px;
-    margin: 50px 50px 50px 50px;
-    border: 1px solid gainsboro;
-    clear: both;
+.project-form h1 {
+  padding: 5px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.input-name {
+  margin: auto;
+  padding: 5px;
+  width: 80%;
+  text-align: left;
+}
+.input-nama-project {
+  width: 100%;
+  height: 40px;
+  border: solid 5px white;
+  border-radius: 5px;
 }
 
-article p {
-    padding: 10px 10px 10px 10px;
-    line-height: 1.5;  
+.date-input {
+  text-align: left;
+  display: flex;
+  margin: auto;
+  width: 80%;
 }
-article .konten {
-    width: 20%;
-    height: auto;
-    margin: 5px 5px 5px 5px;
-    border-radius: 3px;
-    border: 1px solid gainsboro;
-    float: left;
+.start-date {
+  flex: 30%;
+  padding: 5px;
+  margin: -1px 5px 15px -4px;
+  border: 20px;
+}
+.end-date {
+  flex: 40%;
+  padding: 5px;
+}
+.start-date input {
+  padding: 5px;
+  text-align: left;
+  height: 40px;
+  border: solid 5px white;
+  border-radius: 5px;
+  width: 100%;
+}
+.end-date input {
+  text-align: left;
+  height: 40px;
+  border: solid 5px white;
+  border-radius: 5px;
+  width: 100%;
+}
+.deskrip-input {
+  padding-left: 5px;
+  padding-right: 5px;
+
+  align-items: center;
+  text-align: left;
+  height: 150px;
+  width: 80%;
+  margin: auto;
+}
+.deskrip-input label {
+  align-items: center;
+}
+.deskrip-input textarea {
+  width: 100%;
+  border: solid 5px white;
+  border-radius: 5px;
 }
 
-article .isi {
-    width: 98.5%;
-    height: auto;
-    margin: 0%;
-    border-radius: 3px;
-    border: 1px solid gainsboro;
-    float: left;
+.technologies-check {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
 }
-article .isi .judul {
-    font-size: xx-large;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-article .isi p {
-    margin-top: 0;
-}
-article .isi img {
-    float: left;
-    margin: 5px 5px 5px 5px;
+.technologies-check .left-side {
+  text-align: left;
+  flex: 50%;
 }
 
-article .konten img {
-    width: 95.8%;
-    height: 150px;
-    margin: 5px 5px 5px 5px;
+.technologies-check .right-side {
+  text-align: left;
+  flex: 50%;
+}
+.nodeJs-checkBox,
+.reactJs-checkBox,
+.nextJs-checkBox,
+.typeScript-checkBox {
+  padding: 10px;
+}
+.image-input {
+  margin: auto;
+  width: 80%;
+}
+.file-input {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  justify-content: left;
+  background-color: white;
+  border-radius: 5px;
+}
+.file-input input {
+  flex: 50%;
+  padding: 10px;
+  color: transparent;
+}
+.file-input .img {
+  flex: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: right;
+}
 
+.button-post {
+  margin-top: 10px;
+  display: flex;
+  justify-content: right;
 }
-article .konten:hover {
-    opacity:0.9;
+.button-post button {
+  cursor: pointer;
+  color: white;
+  background-color: hsl(0, 0%, 0%);
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+}
+.button-post button:hover {
+  background-color: hwb(0 68% 27%);
+}
 
-}
-article .konten .judul a {
-    margin-left: 5px;
-    text-decoration: none;
-    font-size:x-large;
-    color:#020101;
-}
-
-article .konten a:hover {
-    opacity:0.9;
+.button-post button {
+  border: none;
+  background-color: rgb(128, 228, 92);
+  margin-top: 5px;
+  padding: 5px;
+  height: 30px;
 }
 
-footer {
-    clear: both;
-    width: 98.8%;
-    height: auto;
-    text-align: center;
-    margin: 5px 5px 5px 5px;
-    border-radius: 3px;
-    border-bottom: 1px solid gainsboro;
-    padding-top: 15px;
-    padding-bottom: 15px;  
+/* container project */
+.container-project {
+  height: 100%;
+  background-color:  rgb(34, 145, 34);
 }
+.my-project {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+.my-project .judul-project {
+  text-align: center;
+}
+
+.all-card {
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: auto;
+  column-gap: 20px;
+}
+ .card-statis {
+  width: 340px;
+  height: 100px;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+} 
+.header-blog {
+  width: 100%;
+}
+.header-blog h1 {
+  overflow: hidden;
+  font-size: 15px;
+}
+.image {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.image img {
+  background-position: center;
+  width: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  position: center;
+}
+
+.image,
+.header-blog,
+.deskrip-blog {
+  padding: 5px;
+}
+.deskrip-blog {
+  overflow: auto;
+  text-align: justify;
+}
+
+.card-dinamis {
+  border-radius: 10px;
+  overflow: auto;
+  padding: 10px;
+  margin-top: 20px;
+  width: 450px;
+  height: 600px;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* technology */
+.judul-blog {
+  height: 50px;
+  width: auto;
+}
+.judul-blog a {
+  font-size: 20px;
+  color: black;
+}
+.judul-blog a:hover {
+  color: gray;
+}
+.deskrip-waktu {
+  height: 30px;
+  width: auto;
+}
+.deskrip-waktu p {
+  font-size: 18px;
+}
+.article-blog {
+  text-align: justify;
+  font-size: 20px;
+  overflow: hidden;
+  height: 80px;
+}
+.technology ul {
+  margin-top: 10px;
+  height: 50px;
+  padding-left: 10px;
+  display: flex;
+  list-style: none;
+  column-gap: 20px;
+}
+.technology ul li {
+  display: flex;
+}
+

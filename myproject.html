@@ -30,84 +30,96 @@
 
     </nav>
 
-       <!-- Form -->
-        <div class="blog">
-          <div class="blog-form">
-            <div class="form-container">
-              <form onsubmit="getData(event)">
-               <h1>ADD MY PROJECT</h1>
-              <div>
-                <label for="input-blog-title">Title</label>
-                <input id="input-blog-title" />
+     <!-- form -->
+    <div class="container-form">
+      <div class="project-form">
+        <h1>ADD MY PROJECT</h1>
+        <div class="form-input">
+          <form onsubmit="getData(event)">
+            <div class="input-name">
+              <label for="">Masukan Nama</label>
+              <input type="text" class="input-nama-project" id="namaProject" />
+            </div>
+            <div class="date-input">
+              <div class="start-date">
+                <label for="">Start Date</label>
+                <input type="date" id="start-date" />
               </div>
-              <div>
-                <label for="input-blog-title">Start Date</label>
-                <input id="input-blog-title" />
+              <div class="end-date">
+                <label for="">End Date</label>
+                <input type="date" id="end-date" />
               </div>
-              <div>
-                <label for="input-blog-title">End Date</label>
-                <input id="input-blog-title" />
-              </div>
-              <div>
-                <label for="input-blog-content">Content</label>
-                <textarea id="input-blog-content"></textarea>
-              </div>
-             
-              
-              <div>
-                <label>Send Image</label>
-                <div class="input-blog-image-group">
-                  <label for="input-blog-image">
-                    <p>Attach File</p>
-                    <img src="image/kodok.jpg" alt="file" style="width: 30px;" />
-                  </label>
-                  <input type="file" id="input-blog-image" hidden />
+            </div>
+            <div class="deskrip-input">
+              <label for="">Description</label>
+              <textarea name="" id="text-area-input" cols="54" rows="7"></textarea>
+            </div>
+            <div class="technologies-check">
+              <div class="left-side">
+                <div class="nodeJs-checkBox">
+                  <label for="">PHP</label>
+                  <input type="checkbox" id="checkBoxNode" />
+                </div>
+                <div class="reactJs-checkBox">
+                  <label for="">Javascript</label>
+                  <input type="checkbox" id="checkBoxReact" />
                 </div>
               </div>
-              <div class="button-group">
-                <button>Posting</button>
+              <div class="right-side">
+                <div class="nextJs-checkBox">
+                  <label for="">Mysql</label>
+                  <input type="checkbox" id="checkBoxNext" />
+                </div>
+                <div class="typeScript-checkBox">
+                  <label for="">CSS</label>
+                  <input type="checkbox" id="checkBoxType" />
+                </div>
               </div>
-            </form>
+            </div>
+            <div class="image-input">
+              <p class="upload-img">Upload Image</p>
+              <div class="file-input">
+                <input type="file" value="" id="img-project" />
+                <div class="img">
+                  <img src="./assets/images/file.png" alt="" />
+                </div>
+              </div>
+              <div class="button-post">
+                <button>submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--end form  -->
+
+    <div class="container-project">
+      <div class="my-project">
+        <h1 class="judul-project">PROJECT</h1>
+        <div class="all-card" id="all-card">
+           <div class="card-dinamis" id="dinamisCard">
+            <div class="image" id="imageProject"><img src="" alt="" /></div>
+            <div class="header-blog">
+              <h1 class="judul-blog"><a href="blogkodok.html">asdsd</a></h1>
+              <p class="deskrip-waktu"></p>
+            </div>
+            <div class="container-blog">
+              <p class="deskrip-blog"></p>
+            </div>
+            <div class="technology">
+              <ul>
+                <li><img src="" alt="" width="5%" height="5%" /></li>
+                <li><img src="" alt="" width="5%" height="5%" /></li>
+                <li><img src="" alt="" width="5%" height="5%" /></li>
+                <li><img src="" alt="" width="5%" height="5%" /></li>
+              </ul>
+            </div>
+            
           </div>
         </div>
-      <!--Last From-->
-
-       <article>
-           <div class="konten">
-            <a href="blogkodok.html"><img src="image/kodok.jpg" style="width: 165px;" ></a>
-            <div class="judul">
-                <a href="blogkodok.html">Kodok Zuuma</a>
-            </div>
-           <p>Kodok zuuma adalah binatang amfibi pemakan serangga yang hidup di air tawar atau di daratan</p>
-           </div>
-           <div class="konten">
-            <a href="blogmysql.html"><img src="image/images.png" style="width: 165px;"></a>
-            <div class="judul">
-                <a href="blogmysql.html">MySql</a>
-            </div>
-        
-           <p>Diketahui cikal bakal kulkas ditemukan oleh fisikawan Persia yang melakukan serangkaian percobaan pada abad ke-11.</p>
-           </div>
-           <div class="konten">
-            <a href="blogjavascript.html"><img src="image/kkk.jpg" style="width: 165px;"></a>
-            <div class="judul">
-                <a href="blogjavascript.html">Java Script</a>
-            </div>
-           <p>Kukang memanjat dan bergerak di antara ranting dan cabang pohon dengan perlahan-lahan </p>
-           </div>
-           <div class="konten">
-            <a href="blogphp.html"><img src="image/mike.jpg" style="width: 165px;"></a>
-            <div class="judul">
-                <a href="blogphp.html">PHP</a>
-            </div>
-           <p>Ikan Moorish Idol adalah salah satu ikan yang cukup populer di kalangan ara hobiis ikan hias karena bentuknya yang unik dan pola warnanya yang menarik.</p>
-           </div>
-      </article>
-  
-       <footer>
-        Copyright 2023 Dengan Saya Sendiri
-       </footer>
+      </div>
     </div>
-    <script src="js/blog.js"></script>
-</body>
+    <script src="js/myproject.js"></script>
+  </body>
 </html>
